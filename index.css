@@ -1,0 +1,63 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial,
+    sans-serif;
+  background-image: url("images/table.png");
+  background-size: cover;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  /* color: goldenrod; */
+  font-size: 3.6rem;
+  letter-spacing: -1px;
+  margin-bottom: 3.7rem;
+  font-weight: bolder;
+  color: #12d290;
+}
+
+h1 img {
+  width: 4%;
+  vertical-align: middle;
+  /* mix-blend-mode: multiply; */
+  object-fit: contain;
+  aspect-ratio: 4/3;
+  margin-left: -12px;
+}
+
+#message-el {
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+button {
+  color: #016f32;
+  width: 150px;
+  background: goldenrod;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 2px;
+  margin-top: 8px;
+}
+
+.black-Jack-cards-left,
+.black-Jack-cards-right {
+  mix-blend-mode: multiply;
+}
+
+.black-Jack-cards-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.black-Jack-cards-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
