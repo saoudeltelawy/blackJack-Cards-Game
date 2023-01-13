@@ -19,6 +19,7 @@ function renderGame() {
     cardsEl.textContent =
       "Cards: " + firstCard + " " + secondCard + " " + newDrawnCard;
   } else {
+    // render out firstCard and secondCard [Default]
     cardsEl.textContent = "Cards: " + firstCard + " " + secondCard;
   }
 
