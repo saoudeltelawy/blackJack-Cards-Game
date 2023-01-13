@@ -8,22 +8,10 @@ let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
 let newDrawnCard;
-let cards = [firstCard, secondCard];
 
-// Random Card:
+// Random Card
 function getRandomCard() {
-  // if 1     -> return 11
-  // if 11-13 -> return 10
-  let randomNumber = Math.floor(Math.random() * 13) + 1;
-
-  // Following Game real rules In case A should be 11
-  if (randomNumber > 10) {
-    return 10;
-  } else if (randomNumber === 1) {
-    return 11;
-  } else {
-    return randomNumber;
-  }
+  return 4;
 }
 
 // Start Game
@@ -32,10 +20,12 @@ function startGame() {
 }
 
 function renderGame() {
-  cardsEl.textContent = "Cards: ";
-
-  for (let i = 0; i < cards.length; i++) {
-    cardsEl.textContent += cards[i] + " ";
+  if (newDrawnCard) {
+    cardsEl.textContent =
+      "Cards: " + firstCard + " " + secondCard + " " + newDrawnCard;
+  } else {
+    // render out firstCard and secondCard [Default]
+    cardsEl.textContent = "Cards: " + firstCard + " " + secondCard;
   }
 
   sumEl.textContent = "Sum: " + sum;
@@ -58,11 +48,7 @@ function newCard() {
   // cardsEl.textContent += card;
   newDrawnCard = getRandomCard();
   // Adding the new card to the sum variable
-  // sum += newDrawnCard;
   sum += newDrawnCard;
-
-  cards.push(newDrawnCard);
   // Call startGame func to show the message so we need to run the code inside the renderGame function.
-
   renderGame();
 }
