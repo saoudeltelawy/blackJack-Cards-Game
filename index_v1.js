@@ -52,3 +52,15 @@ function newCard() {
   // Call startGame func to show the message so we need to run the code inside the renderGame function.
   renderGame();
 }
+
+// function newCard() {
+//   // Logic is:  Only allow the player to get a new card if she IS alive and does NOT have Blackjack
+//   if (isAlive === true && hasBlackJack === false) {
+//     let card = getRandomCard();
+//     sum += card;
+//     cards.push(card);
+
+//     // Call startGame func to show the message so we need to run the code inside the renderGame function.
+//     renderGame();
+//   }
+// }

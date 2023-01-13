@@ -8,10 +8,11 @@ let cardsEl = document.getElementById("cards-el");
 let newDrawnCard;
 let cards = []; //Cards Deck is here!
 // Final Component [Winning]
-let gamePlayer = { name: "Saoud", chips: 140 };
+let playerName = "Saoud";
+let playerChips = 140;
 let playerAmountDisplay = document.getElementById("player-money");
 
-playerAmountDisplay.textContent = gamePlayer.name + ": $" + gamePlayer.chips;
+playerAmountDisplay.textContent = playerName + ": $" + playerChips;
 
 // Random Card:
 function getRandomCard() {
